@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Creative Corner</title>
+    <title>The Creative Corner | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,23 +13,55 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="hero">
+            <h1>Welcome to The Creative Corner</h1>
+            <p>Your premier advertising agency for innovative and impactful campaigns.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
         <section id="about-us">
             <h2>About Us</h2>
-            <p>Welcome to The Creative Corner, where creativity meets professionalism. We specialize in delivering top-notch creative solutions tailored to your needs.</p>
+            <p>At The Creative Corner, we blend creativity with strategy to craft compelling advertising campaigns that drive results. Our team of experts is dedicated to bringing your brand to life.</p>
         </section>
-        <section id="why-us">
-            <h2>Why You Should Work With Us</h2>
-            <p>Our team is dedicated to providing exceptional services with a focus on innovation and quality. We take pride in our work and strive to exceed your expectations.</p>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Brand Strategy</h3>
+                <p>We develop comprehensive brand strategies that set you apart from the competition and resonate with your target audience.</p>
+            </div>
+            <div class="service">
+                <h3>Creative Development</h3>
+                <p>Our creative team designs eye-catching visuals and engaging content that captures your brand's essence.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>From SEO to social media, we create digital marketing campaigns that drive traffic and convert leads into customers.</p>
+            </div>
         </section>
-        <section id="client-experiences">
-            <h2>Client Experiences</h2>
-            <p>Our clients love working with us! Here are some of their experiences:</p>
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
             <blockquote>"The Creative Corner transformed our vision into reality. Their creativity and professionalism are unmatched." - Client A</blockquote>
             <blockquote>"Working with The Creative Corner was a breeze. They understood our needs and delivered beyond our expectations." - Client B</blockquote>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to elevate your brand? Get in touch with us today!</p>
+            <form action="mailto:info@thecreativecorner.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
