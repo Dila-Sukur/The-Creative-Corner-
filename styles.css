@@ -1,205 +1,79 @@
-/* Base styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: #fff8e1;
+    font-family: 'Satoshi', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    background-color: #f5f5f7;
+    color: #333;
 }
 
 header {
-    background-color: #ffa000;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.logo {
-    height: 50px;
+    background-color: #1d3557;
+    padding: 1em 0;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ff8f00;
-    border-radius: 5px;
-}
-
-main {
-    margin-top: 80px; /* To account for fixed header */
-}
-
-.section {
-    padding: 60px 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
-.section .content {
-    max-width: 800px;
-    text-align: center;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+nav ul li {
+    margin: 0 1em;
 }
 
-#hero {
-    background-color: #ffa000;
-    color: #fff;
-}
-
-#hero .content {
-    background-color: transparent;
-    box-shadow: none;
-}
-
-#hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#hero .btn {
-    background-color: #ff4929;
-    color: #fff;
-    padding: 15px 30px;
+nav ul li a {
+    color: #fcbf49;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-weight: 700;
 }
 
-#hero .btn:hover {
-    background-color: #ff8f00;
+.hero {
+    background-color: #ff9f1c;
+    color: #1d3557;
+    text-align: center;
+    padding: 2em 1em;
 }
 
-h2 {
-    color: #ff8f00;
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ff4929;
-    padding-bottom: 5px;
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-#services .service-box {
-    background-color: #ff8f00;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.hero p {
+    font-size: 1.2em;
 }
 
-#services .service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-blockquote {
-    border-left: 5px solid #ff4929;
-    padding-left: 15px;
-    margin: 20px 0;
-    color: #ff4929;
-    font-style: italic;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#contact form {
+.products {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: space-around;
+    padding: 2em 1em;
+}
+
+.product {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
 }
 
-#contact form label {
-    font-weight: bold;
+.product h2 {
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
-#contact form input, #contact form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact form button {
-    background-color: #ff4929;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact form button:hover {
-    background-color: #ff8f00;
-}
-
-.portfolio-item {
-    background-color: #fff;
-    border: 1px solid #ffa000;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.portfolio-item h3 {
-    color: #ff8f00;
-    margin-top: 15px;
-}
-
-.portfolio-item p {
-    margin-top: 10px;
+.product p {
+    font-size: 1em;
+    color: #666;
 }
 
 footer {
-    background-color: #ffa000;
+    background-color: #1d3557;
+    color: #fcbf49;
     text-align: center;
-    padding: 15px 20px;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
 }
