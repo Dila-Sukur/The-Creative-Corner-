@@ -19,6 +19,9 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -45,51 +48,34 @@ nav a:hover {
 }
 
 main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 80px; /* To account for fixed header */
 }
 
-h2 {
-    color: #ff8f00;
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ff4929;
-    padding-bottom: 5px;
+.section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-blockquote {
-    border-left: 5px solid #ff4929;
-    padding-left: 15px;
-    margin: 20px 0;
-    color: #ff4929;
-    font-style: italic;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #ffa000;
+.section .content {
+    max-width: 800px;
     text-align: center;
-    padding: 15px 20px;
-    color: #fff;
-    position: relative;
-    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #hero {
     background-color: #ffa000;
     color: #fff;
-    text-align: center;
-    padding: 80px 20px;
-    margin-bottom: 40px;
-    border-bottom: 5px solid #ff8f00;
+}
+
+#hero .content {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 #hero h1 {
@@ -116,36 +102,47 @@ footer {
     background-color: #ff8f00;
 }
 
-#services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+h2 {
+    color: #ff8f00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4929;
+    padding-bottom: 5px;
 }
 
-#services .service {
-    flex: 1;
-    min-width: 250px;
+#services .service-box {
     background-color: #ff8f00;
     color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#services .service:hover {
+#services .service-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    border-left: 5px solid #ff4929;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #ff4929;
+    font-style: italic;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -195,4 +192,14 @@ footer {
 
 .portfolio-item p {
     margin-top: 10px;
+}
+
+footer {
+    background-color: #ffa000;
+    text-align: center;
+    padding: 15px 20px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
